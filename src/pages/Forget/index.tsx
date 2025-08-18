@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 
-const API_BASE_URL: string = "http://localhost:4001";
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL ;
 
 // Styled wrapper
 const ResetWrapper = styled.div`

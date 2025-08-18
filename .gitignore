@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 .CODE_OF_CONDUCT.md
+.env
 
 # testing
 /coverage

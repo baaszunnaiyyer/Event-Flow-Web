@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 
-const API_BASE_URL: string = "http://localhost:4001";
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
+
+console.log(API_BASE_URL);
+
 
 // Spinner animation
 const spin = keyframes`
@@ -46,6 +49,8 @@ const VerifyPage: React.FC = () => {
   const [verified, setVerified] = useState<boolean>(false);
 
   useEffect(() => {
+    console.log(API_BASE_URL);
+    
     const verifyUser = async () => {
       try {
         const response = await fetch(`${API_BASE_URL}/auth/verify/${token}`, {
