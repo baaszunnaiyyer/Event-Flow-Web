@@ -1,112 +1,61 @@
-![landy](https://user-images.githubusercontent.com/48876996/121569479-e179db80-ca31-11eb-8a48-9c3de9b142f3.gif)
+Event Flow Web is a modern React-based application designed to simplify event management and participation. Whether you're hosting or attending, Event Flow provides a smooth, responsive, and user-friendly experience.
 
-![Landy React Template License](https://img.shields.io/github/license/Adrinlol/landy-react-template)
-![Landy React Template Release Date](https://img.shields.io/github/release-date/Adrinlol/landy-react-template)
-![Landy React TemplateStars](https://img.shields.io/github/stars/Adrinlol/landy-react-template)
-![Landy React Template Language](https://img.shields.io/github/languages/top/Adrinlol/landy-react-template)
-![Landy React Template TypeScript](https://badgen.net/npm/types/tslib)
+Built with React + TypeScript, it combines a clean UI with optimized performance, making it easy to scale and customize.
 
-## Free React landing page template
+* ✨ Features
 
-[Landy][Landy] is an open-source React landing page template written in TypeScript, designed for developers and startups, who want to create a quick and professional landing page for their business or project.
+* 🎨 Modern UI – Responsive, clean, and customizable design.
 
-This React template comes with multi-lingual support, smooth animations, set of ready to use sections and most importantly, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in React.js.
+* 🌍 Multi-language support – Easy internationalization for global users.
 
-## Table of contents
+* 📅 Event Management – Create, view, and manage events effortlessly.
 
-- [Features](#features)
-- [Google Lighthouse](#google-lighthouse)
-  - [Performance](#performance)
-  - [Accessibility](#accessibility)
-  - [Best Practices](#best-practices)
-  - [SEO](#seo)
-- [Demo](#demo)
-- [Installation](#installation)
-- [Special Thanks](#special-thanks)
-- [Usage](#usage)
-- [License](#license)
+* ⚡ Optimized Performance – Fast load times and smooth transitions.
 
-## Features
+* 📧 User Interactions – Contact forms and feedback support.
 
-Your project will have everything you need to build a modern single-page React app:
+* 🔒 Authentication Ready – Supports integration with Firebase/Clerk/Auth APIs.
 
-- 🎁 **Modern** – Template created using the latest features of React (State management using Hooks, Code-Splitting to reduce the bundle size)
+* 🚀 Demo
 
-- 💻 **Responsive** – Highly responsive and reusable UI components, that change depending on the provided props
+* 👉 Live Demo
 
-- 🚀 **Fast** – Buttery smooth experience thanks to the implementation of best practices and no third party dependencies, resulting in <b>PERFECT</b> Google Lighthouse scores
+* ⚙️ Installation
 
-- 🏷 **TypeScript support** – Landy is written in TypeScript to improve the DX
+Make sure you have Node.js 16+ installed.
 
-- 🌍 **Internationalization** - Prebuilt standalone file that works in every environment and doesn't require reloading the page to translate the content
+# Clone the repository
+```
+git clone https://github.com/baaszunnaiyyer/Event-Flow-Web.git
+```
+# Navigate to project
+```
+cd Event-Flow-Web
+```
+# Install dependencies
+```
+npm install
+```
+# Start development server
+```bash
+npm run dev
+```
+# 📂 Tech Stack
 
-- 🛸 **Routing** - Each file inside the src/pages directory will generate its own route, so you don't have to manually handle the routing
+* React – UI library
 
-- 🤙 **Contact Form** - Contact form written in React Hooks, with uncontrolled form validation to reduce unnecessary performance penalty. You just need to provide the endpoint
+* TypeScript – Type safety
 
-- ⚙️ **Maintenance** - All of the content is stored in the JSON files, so that you can easily manage the content of the website
+* Styled Components – CSS-in-JS styling
 
-## Google Lighthouse
+* i18next – Internationalization
 
-![1](https://user-images.githubusercontent.com/48876996/121569366-c313e000-ca31-11eb-940c-187f556ff0d6.png)
+* Ant Design – UI components
 
-[Google Lighthouse][Google Lighthouse] is an open-source, automated tool for measuring the quality of web pages. Google Lighthouse audits performance, accessibility and search engine optimization of web pages.
+# 🙌 Acknowledgements
 
-### Performance
+This project was initially inspired by open-source React templates like Landy, but has been customized and extended for Event Flow.
 
-Audits for metrics like first paint and time to interactive to determine lag.
+# 📜 License
 
-### Accessibility
-
-Checks for common issues that may prevent users from accessing your content.
-
-### Best Practices
-
-Looks for everything from HTTPS usage to correct image aspect ratios.
-
-### SEO 
-
-Checks for best practices to ensure your site is discoverable.
-
-
-## Demo
-
-Check the live demo here 👉️ https://landy-web.netlify.app/
-
-
-### Installation
-
-You’ll need to have Node 10.16.0 or later version on your local development machine (but it’s not required on the server). I recommend using the latest LTS version.
-
-To create a new app, you have to:
-
-Begin by cloning this repository to establish your own local copy. This process is straightforward and ensures you have all the necessary files and resources at your fingertips. You can find step-by-step instructions in this helpful article: Cloning a [repository on GitHub.com](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository).
-
-## What's included
-
-- [antd][antd] - React UI library that contains a set of high quality components.
-- [react-awesome-reveal][react-awesome-reveal] - High performance library that adds reveal animations using the Intersection Observer API.
-- [styled-componets][styled-componets] - Variant on “CSS-in-JS”—which solves many of the problems with traditional CSS.
-- [i18next][i18next] - Internationalization-framework written in and for JavaScript.
-
-## Special thanks
-
-[whoooa][whoooa] - Use fantastic, handmade illustrations with easily changeable colors and different styles.
-
-## Usage
-
-Use it for whatever you want, and be sure to reach out to me on [Twitter](https://twitter.com/Adrinlolx) if you have any questions, or build something cool with it.
-
-## License
-
-Licensed under the MIT license.
-
-<!-- prettier-ignore-start -->
-[antd]: https://github.com/ant-design/ant-design
-[react-awesome-reveal]: https://www.npmjs.com/package/react-awesome-reveal
-[styled-componets]: https://github.com/styled-components/styled-components
-[i18next]: https://github.com/i18next/i18next
-[whoooa]: https://www.whoooa.rocks/
-[Landy]: https://www.npmjs.com/package/cra-template-adrinlol
-[Google Lighthouse]: https://developers.google.com/web/tools/lighthouse
-<!-- prettier-ignore-end -->
+Licensed under the MIT License
