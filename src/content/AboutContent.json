@@ -1,15 +1,15 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Simple, powerful & visual",
+  "text": "Event Flow is designed to make managing your work and life effortless. With a clean interface and powerful visual tools, you stay organized without the overwhelm.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "Why Event Flow?",
+      "content": "Because your goals deserve clarity. Event Flow combines team collaboration and personal life planning into one seamless platform, keeping everything in sync.",
       "icon": "notes.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
+      "title": "Why Visual Planning?",
+      "content": "Seeing your goals and tasks visually helps you track progress, stay motivated, and never lose sight of what matters most.",
       "icon": "notes.svg"
     }
   ]
