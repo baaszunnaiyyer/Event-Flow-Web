@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
+import { useHistory } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
@@ -18,17 +20,27 @@ import {
 
 const Header = ({ t }: { t: TFunction }) => {
   const [visible, setVisibility] = useState(false);
+  const { user, logout } = useAuth();
+  const history = useHistory();
 
   const toggleButton = () => {
     setVisibility(!visible);
   };
 
+  const handleLogout = async () => {
+    await logout();
+    history.push("/");
+    setVisibility(false);
+  };
+
   const MenuItem = () => {
     const scrollTo = (id: string) => {
       const element = document.getElementById(id) as HTMLDivElement;
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
       setVisibility(false);
     };
     return (
@@ -42,14 +54,25 @@ const Header = ({ t }: { t: TFunction }) => {
         <CustomNavLinkSmall onClick={() => scrollTo("product")}>
           <Span>{t("Product")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
-        >
-          <Span>
-            <Button>{t("Contact")}</Button>
-          </Span>
+        <CustomNavLinkSmall onClick={() => scrollTo("contact")}>
+          <Span>{t("Contact")}</Span>
         </CustomNavLinkSmall>
+        {user ? (
+          <>
+            <CustomNavLinkSmall onClick={() => { history.push("/settings"); setVisibility(false); }}>
+              <Span>Profile</Span>
+            </CustomNavLinkSmall>
+            <CustomNavLinkSmall onClick={handleLogout}>
+              <Span>Logout</Span>
+            </CustomNavLinkSmall>
+          </>
+        ) : (
+          <CustomNavLinkSmall onClick={() => { history.push("/login"); setVisibility(false); }}>
+            <Span>
+            {t("Login")}
+            </Span>
+          </CustomNavLinkSmall>
+        )}
       </>
     );
   };

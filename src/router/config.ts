@@ -14,6 +14,21 @@ const routes = [
     exact: false,
     component: "Forget",
   },
+  {
+    path: ["/login"],
+    exact: true,
+    component: "Login",
+  },
+  {
+    path: ["/settings"],
+    exact: true,
+    component: "Settings",
+  },
+  {
+    path: ["/info"],
+    exact: true,
+    component: "Info",
+  },
 ];
 
 export default routes;

@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 
-const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL as string;
+
+// Clean the URL to remove trailing slashes
+const cleanBaseUrl = API_BASE_URL.replace(/\/+$/, "");
 
 console.log(API_BASE_URL);
 
@@ -53,7 +56,7 @@ const VerifyPage: React.FC = () => {
     
     const verifyUser = async () => {
       try {
-        const response = await fetch(`${API_BASE_URL}/auth/verify/${token}`, {
+        const response = await fetch(`${cleanBaseUrl}/auth/verify/${token}`, {
           method: "PUT",
         });
 

@@ -2,7 +2,10 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 
-const API_BASE_URL = process.env.REACT_APP_BACKEND_URL ;
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL as string;
+
+// Clean the URL to remove trailing slashes
+const cleanBaseUrl = API_BASE_URL.replace(/\/+$/, "");
 
 // Styled wrapper
 const ResetWrapper = styled.div`
@@ -71,7 +74,7 @@ const ResetPasswordPage: React.FC = () => {
 
     try {
       setLoading(true);
-      const response = await fetch(`${API_BASE_URL}/auth/forget/${token}`, {
+      const response = await fetch(`${cleanBaseUrl}/auth/forget/${token}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password: newPassword }),
