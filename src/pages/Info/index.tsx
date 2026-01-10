@@ -133,6 +133,11 @@ const ContactBox = styled.div`
       color: #f0f0f0;
     }
   }
+
+  strong {
+    color: white;
+    font-weight: 700;
+  }
 `;
 
 const Info: React.FC = () => {
