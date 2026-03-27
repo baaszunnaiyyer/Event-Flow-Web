@@ -145,7 +145,7 @@ const Info: React.FC = () => {
     <InfoContainer>
       <Header>
         <Title>Privacy Policy</Title>
-        <LastUpdated>Last updated: January 07, 2026</LastUpdated>
+        <LastUpdated>Last updated: March 27, 2026</LastUpdated>
       </Header>
 
       <Content>
@@ -217,6 +217,11 @@ const Info: React.FC = () => {
             We may also collect information that Your browser sends whenever You visit Our Service or when You access the Service by or through a mobile device.
           </p>
 
+          <h4>Calendar events (effective April 10, 2026)</h4>
+          <p>
+            Starting <strong>April 10, 2026</strong>, and only where You grant Us the necessary permission, We may read events from Your calendar (for example, through a connected Google Calendar or similar calendar account). We use this information to show Your calendar events alongside other content in the Service so that You can have everything in one place. We process calendar event data only for this purpose and in line with the permissions You provide; You can typically revoke calendar access through Your device or account settings at any time.
+          </p>
+
           <h4>Cookies and Tracking Technologies</h4>
           <p>
             We use cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service. The technologies We use may include:
@@ -261,6 +266,7 @@ const Info: React.FC = () => {
           <ul>
             <li><strong>Google Sign-In:</strong> We use Google Sign-In for authentication. Google's use of information is governed by their Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
             <li><strong>Firebase:</strong> We use Google Firebase for authentication and analytics. Firebase's privacy practices can be found at: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a></li>
+            <li><strong>Calendar providers (from April 10, 2026):</strong> If You choose to connect Your calendar, calendar data may be processed according to that provider&apos;s terms and privacy policy (for example, Google Calendar: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>), in addition to this Privacy Policy.</li>
           </ul>
         </Section>
 
